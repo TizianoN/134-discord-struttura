@@ -1,0 +1,244 @@
+/* # RESET */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+section {
+  padding: 50px 0;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.w-1-3 {
+  width: calc(100% / 3);
+}
+
+.w-20 {
+  width: 30%;
+}
+
+.w-30 {
+  width: 30%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.card {
+  border: 1px solid black;
+}
+
+.card-header {
+  border-bottom: 1px solid black;
+  padding: 0.5rem;
+}
+
+.card-body {
+  padding: 0.5rem;
+}
+
+.card .fa-ul {
+  margin-left: 24px;
+}
+
+/* # HEADER */
+
+.header-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header-item li {
+  display: inline-block;
+}
+
+/* # SECTION HERO */
+
+#hero {
+  background-color: aquamarine;
+  padding-bottom: 0;
+}
+
+#hero .container {
+  position: relative;
+  top: 50px;
+  width: 1100px;
+}
+
+#hero .content-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: 60px;
+}
+
+#hero .content-col :first-child {
+  flex-grow: 1;
+}
+
+#hero .hero-content {
+  display: flex;
+}
+
+/* # SECTION BUSINESS PLAN */
+
+#business-plan {
+  padding-top: 100px;
+}
+
+#business-plan .plan-type {
+  display: flex;
+}
+
+#business-plan .business-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#business-plan .business-cards > * {
+  flex-grow: 1;
+}
+
+#business-plan .card.w-100 > .card-body {
+  display: flex;
+}
+
+[name='plan-type'] {
+  display: none;
+}
+
+[name='plan-type']:checked + label {
+  background-color: red;
+}
+
+/* # SECTION PARTNERS */
+
+#partners > .container {
+  display: flex;
+}
+
+/* # SECTION SOLUTIONS */
+
+#solutions .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+#solutions > .container > * {
+  flex-grow: 1;
+}
+
+/* # BRANDS */
+
+#brands .row {
+  display: flex;
+}
+
+#brands .brand-col {
+  width: calc(100vw / 3);
+  height: calc(100vw / 3);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#brands .brand-square {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand-col.central-brand-col {
+  overflow: auto;
+}
+
+#brands svg {
+  fill: white;
+  width: 50%;
+}
+
+/* # SECTION WORK WITH US */
+
+#work-with-us > .container {
+  display: flex;
+}
+
+/* # SECTION FAQ */
+
+#faq .accordion-item > label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#faq .accordion-item > input[type='checkbox'],
+#faq .accordion-item > input[type='checkbox'] ~ .accordion-item-content,
+#faq .accordion-item > input[type='checkbox'] ~ label > .accordion-item-open-icon,
+#faq .accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-close-icon {
+  display: none;
+}
+
+#faq .accordion-item > input[type='checkbox']:checked ~ .accordion-item-content,
+#faq .accordion-item > input[type='checkbox']:checked ~ label > .accordion-item-open-icon,
+#faq .accordion-item > input[type='checkbox'] ~ label > .accordion-item-close-icon {
+  display: block;
+}
+
+/* # FOOTER */
+
+.page-footer .row {
+  display: flex;
+}
+
+/* # DEBUG */
+
+.debug,
+.debug * {
+  background-color: lightgrey;
+  border: 2px dashed black;
+  padding: 10px;
+  min-height: 50px;
+}
